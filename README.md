@@ -1,31 +1,40 @@
-Sample PhoneGap Template for Framework7+Vue
+Build a chat app with Pusher Channels using Framework 7
 ============================================
 
-A PhoneGap template for the [Framework7+Vue Simple Template](http://framework7.io/vue/templates.html). Check out
-this [associated blog post](http://devgirl.org/2017/01/10/phonegap-apps-with-vue-js-yes-please) for details about
-using PhoneGap with Vue.js.
+A Simple chat application built with Framework 7 and Pusher 
 
 ## Quick Start
+This project contains the source code for a very simple realtime chat application built with Framework 7 and Pusher
+[View tutorial](https://paper.dropbox.com/doc/Build-a-chat-app-with-Pusher-Channels-using-Framework-7-EJ3pNrg5VzIRZYRFJAZyG#:h2=Build-a-chat-app-with-Pusher-C)
 
-### PhoneGap CLI
 
-    $ phonegap create myVueApp --template https://github.com/hollyschinsky/phonegap-template-framework7-vue
-    $ cd myVueApp
-    $ phonegap serve
+### Prerequisites
+You will need the following things properly installed on your computer.
+* Git
+* Node.js (with npm)
+* Phonegap CLI
+* Vuejs
+* Google Chrome
 
-    or
+Create a Pusher application - Create a new application on your Pusher Dashboard to get your app credentials.
 
-    $ open www/index.html
+### Getting Started
+Clone the repository
+$ git clone https://github.com/Kennypee/pusher-framework7-chat.git
 
-### Cordova CLI
+Change directory
+$ cd pusher-framework7-chat
 
-    $ cordova create myVueApp --template https://github.com/hollyschinsky/phonegap-template-framework7-vue
-    $ cd myVueApp
-    $ open www/index.html
+Run the application
+$ phonegap server
 
-This template includes the required Framework7, Vue and Cordova setup to help you get started quickly.
-It's targeted at beginners who want to start exploring Framework7 + Vue without the distraction of a
-complicated development environment. For advanced features such as asset compilation, hot-reload and CSS extraction,
-check out the more experienced developers use one of the other templates: [Framework7 Vue Webpack Template](https://github.com/nolimits4web/Framework7-Vue-Webpack-Template) or [Framework7 Vue Browserify Template](https://github.com/nolimits4web/Framework7-Vue-Browserify-Template).
+Visit your app at http://localhost:3000.
 
-Check out the [Framework7+Vue.js documentation](http://framework7.io/vue/) for full details on the sample app code.
+### Built With
+Framework 7 - a free and open source mobile HTML framework to develop hybrid mobile apps with iOS & Android native look and feel
+
+Pusher - A Node.js client to interact with the Pusher REST API
+
+Vuejs- an open-source JavaScript framework for building user interfaces
+
+Phonegap - is an application framework that enables you to build natively installed applications using HTML and JavaScript.
