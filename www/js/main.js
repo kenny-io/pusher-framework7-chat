@@ -1,5 +1,5 @@
 
-   const pusher = new Pusher('bb39d58f0fb494f894ad', {
+   const pusher = new Pusher('Your-Pusher-Key', {
     cluster: 'eu',
     encrypted: true,
   });
@@ -38,7 +38,7 @@ Vue.component('page-chat', {
             name: this.name,
             text: text 
         }
-        axios.post('http://localhost:9000/message', message);
+        axios.post('http://localhost:6000/message', message);
 
       if( typeof clear == 'function' ) clear()
     }
@@ -80,7 +80,7 @@ new Vue({
 
 }  
 // Handle device ready event
-// Note: You may want to check out the vue-cordova package on npm for cordova specific handling with vue - https://www.npmjs.com/package/vue-cordova
+
 document.addEventListener('deviceready', init, false)
 
 })();
