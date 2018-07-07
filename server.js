@@ -10,14 +10,14 @@
     app.use(bodyParser.json());
     
     var pusher = new Pusher({
-        appId: '553642',
-        key: 'bb39d58f0fb494f894ad',
-        secret: 'b6ab87cbb890afd51230',
+        appId: 'Your-app-Id',
+        key: 'Your-app-key',
+        secret: 'Your-app-secret',
         cluster: 'eu',
         encrypted: true
       });
 
-    app.set('PORT', process.env.PORT || 9000);
+    app.set('PORT', process.env.PORT || 6000);
 
     app.post('/message', (req, res) => {
       const message = req.body;
